@@ -1,0 +1,2870 @@
+<!DOCTYPE html>
+<html class="no-js js" style="height:100%" lang="en-US'">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+	<link rel="icon" type="image/png"
+		href="https://grinvitation.com/master/master/template/grinvi01%20(Indonesia%20-%20Muslim)/images/logo.png">
+
+	<meta property="og:image"
+		content="https://grinvitation.com/00.asset/images/wungatetenwedding/background_desktop_2509_14-57-37.jpg">
+	<meta property="og:title" content="Undangan Pernikahan Wunga &amp; Teten">
+	<meta property="og:description" content="Gedung Graha Alif Solokanjeruk | 25 Agustus 2021">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://grinvitation.com/wungatetenwedding">
+
+	<!--================== AWAL BLOK STYLE ================================= -->
+	<!-- CSS STYLE UMUM-->
+	<link rel="stylesheet" type="text/css" href="assets/style_umum.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="assets/global.html" media="screen">
+	<link rel="stylesheet" type="text/css" href="assets/font-awesome.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="assets/navstylechange.css" media="screen">
+	<link rel="stylesheet" href="assets/animations.css" type="text/css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="assets/style.css">
+
+
+	<!-- CSS MENU -->
+	<link rel="stylesheet" href="assets/styles_menu.css">
+
+	<!-- CSS STORY -->
+	<link rel="stylesheet" href="assets/style_story.css">
+
+	<!-- CSS FONT -->
+	<link rel="stylesheet" type="text/css" href="assets/font-awesome.html">
+	<link rel="stylesheet" type="text/css" href="assets/dataTables.html">
+
+	<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+	<link rel="stylesheet" type="text/css" href="assets/settings.css" media="screen">
+
+	<!-- RESPONSIVE -->
+	<link rel="stylesheet" type="text/css" href="assets/responsive.css" media="screen">
+
+	<!-- FONT -->
+	<link href="assets/css_004.css" rel="stylesheet">
+	<link href="assets/css_008.css" rel="stylesheet">
+	<link href="assets/css_002.css" rel="stylesheet">
+	<link href="assets/css.css" rel="stylesheet">
+	<link href="assets/css_006.css" rel="stylesheet">
+	<link href="assets/css_007.css" rel="stylesheet">
+
+	<!-- FONT TAMBAHAN CUSTOME-->
+	<link href="assets/css_003.css" rel="stylesheet">
+	<link href="assets/css_005.css" rel="stylesheet">
+
+
+	<!-- GALLERY -->
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap_002.css">
+	<link rel="stylesheet" type="text/css" href="assets/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="assets/style-gallery.css">
+
+	<!-- SCROLL DIRECTION -->
+	<link rel="stylesheet" href="assets/style_button_scroll.css">
+
+	<!-- POPUP -->
+	<link rel="stylesheet" type="text/css" href="assets/popup_style.css">
+
+	<!--================== AKHIR BLOK STYLE ================================= -->
+
+	<!--================== AWAL BLOK JS ================================= -->
+	<!-- get jQuery from the google apis -->
+	<script type="text/javascript" src="assets/jquery_002.js"></script>
+
+	<!-- JS MENU -->
+	<script src="assets/responsive-nav.js"></script>
+
+	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+	<script type="text/javascript" src="assets/jquery.js"></script>
+	<script type="text/javascript" src="assets/jquery_003.js"></script>
+
+	<!--================== AKHIR BLOK JS ================================= -->
+
+	<link rel="stylesheet" href="assets/bootstrap.css">
+	<script src="assets/bootstrap.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#myModal').modal('show');
+		});
+	</script>
+
+	<script>
+		function get_data(pilihan) {
+			$.ajax({
+				url: 'ambil_data.php?data=sesi1',
+				data: 'dat=' + pilihan,
+				type: 'post',
+				dataType: 'html',
+				timeout: 10000,
+				success: function (response) {
+					$('#hasil_data_sesi').html(response);
+				}
+			});
+
+			$.ajax({
+				url: 'ambil_data.php?data=person1',
+				data: 'dat=' + pilihan,
+				type: 'post',
+				dataType: 'html',
+				timeout: 10000,
+				success: function (response) {
+					$('#hasil_data').html(response);
+				}
+			});
+		}
+
+		function get_data2(pilihan) {
+			$.ajax({
+				url: 'ambil_data.php?data=sesi1',
+				data: 'dat=' + pilihan,
+				type: 'post',
+				dataType: 'html',
+				timeout: 10000,
+				success: function (response) {
+					$('#hasil_data_sesi').html(response);
+				}
+			});
+
+			$.ajax({
+				url: 'ambil_data.php?data=person2',
+				data: 'dat=' + pilihan,
+				type: 'post',
+				dataType: 'html',
+				timeout: 10000,
+				success: function (response) {
+					$('#hasil_data2').html(response);
+				}
+			});
+		}
+
+		function get_data3(pilihan) {
+			$.ajax({
+				url: 'ambil_data.php?data=sesi1',
+				data: 'dat=' + pilihan,
+				type: 'post',
+				dataType: 'html',
+				timeout: 10000,
+				success: function (response) {
+					$('#hasil_data_sesi').html(response);
+				}
+			});
+
+			$.ajax({
+				url: 'ambil_data.php?data=person3',
+				data: 'dat=' + pilihan,
+				type: 'post',
+				dataType: 'html',
+				timeout: 10000,
+				success: function (response) {
+					$('#hasil_data3').html(response);
+				}
+			});
+
+
+		}
+
+		function get_data4(pilihan) {
+
+			$.ajax({
+				url: 'ambil_data.php?data=person4',
+				data: 'dat=' + pilihan,
+				type: 'post',
+				dataType: 'html',
+				timeout: 10000,
+				success: function (response) {
+					$('.hasil_data4').html(response);
+				}
+			});
+
+
+		}
+	</script>
+
+
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="assets/swiper.css">
+
+	<!-- Demo styles -->
+	<style>
+		.swiper-container {
+			width: 100%;
+			height: 100%;
+			color: #9b9a8b;
+		}
+
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+
+		.gaya {
+			display: inline-block;
+			width: 65px;
+			height: 65px;
+			/*background: rgba(241, 78, 149, 0.8);*/
+			background-color: #2f4d40;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			border-radius: 50%;
+			position: relative;
+			animation: pulse 1s ease infinite;
+			color: #FFFFFF;
+			font-size: 28px;
+			margin-top: 10px;
+			padding-top: 7px;
+		}
+
+		.gaya span {
+			font-size: 8px;
+			display: block;
+			color: white;
+			margin-top: -10px;
+			font-family: Montserrat, sans-serif;
+		}
+
+		.couple-wrap {
+			width: 90%;
+			margin: 0 auto;
+			position: relative;
+		}
+
+		@media screen and (max-width: 768px) {
+			.couple-wrap {
+				width: 100%;
+			}
+		}
+
+		.heart {
+			position: absolute;
+			top: 4em;
+			left: 0;
+			right: 0;
+			z-index: 99;
+			animation: pulse 1s ease infinite;
+		}
+
+		.heart i {
+			font-size: 20px;
+			background: #fff;
+			padding: 20px;
+			color: #F14E95;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			border-radius: 50%;
+		}
+
+		@media screen and (max-width: 768px) {
+			.heart {
+				display: none;
+			}
+		}
+
+		.couple-half {
+			width: 50%;
+			float: left;
+		}
+
+		@media screen and (max-width: 768px) {
+			.couple-half {
+				width: 100%;
+			}
+		}
+
+		.couple-half h3 {
+			font-family: 'Roboto Slab', serif;
+			color: #474848;
+			font-size: 20px;
+		}
+
+		.couple-half .groom,
+		.couple-half .bride {
+			float: left;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			border-radius: 50%;
+			width: 150px;
+			height: 150px;
+		}
+
+		.couple-half .groom img,
+		.couple-half .bride img {
+			width: 150px;
+			height: 150px;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			border-radius: 50%;
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.couple-half .groom,
+			.couple-half .bride {
+				width: 100%;
+				height: 140px;
+			}
+
+			.couple-half .groom img,
+			.couple-half .bride img {
+				width: 120px;
+				height: 120px;
+				margin: 0 auto;
+			}
+		}
+
+		.couple-half .groom {
+			float: right;
+			margin-right: 5px;
+		}
+
+		.couple-half .bride {
+			float: left;
+			margin-left: 5px;
+		}
+
+		.couple-half .desc-groom {
+			padding-right: 180px;
+			text-align: right;
+		}
+
+		.couple-half .desc-bride {
+			padding-left: 180px;
+			text-align: left;
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.couple-half .groom,
+			.couple-half .bride {
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.couple-half .desc-groom {
+				padding-right: 0;
+				text-align: center;
+			}
+
+			.couple-half .desc-bride {
+				padding-left: 0;
+				text-align: center;
+			}
+		}
+
+		.videoWrapper {
+			position: relative;
+			padding-bottom: 56.25%;
+			/* 16:9 */
+			padding-top: 25px;
+			height: 0;
+		}
+
+		.videoWrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.float {
+			position: fixed;
+			width: 50px;
+			height: 50px;
+			bottom: 40px;
+			right: 15px;
+			background-color: #2f4d40;
+			opacity: 0.8;
+			color: #FFF;
+			border-radius: 50px;
+			text-align: center;
+			padding-top: 12px;
+			z-index: 99;
+		}
+
+		.cd-timeline__container::before {
+			background-color: #2f4d40;
+		}
+
+		.cd-timeline__content {
+			-webkit-box-shadow: 0 3px 0 #2f4d40;
+			box-shadow: 0 3px 0 #2f4d40;
+		}
+
+		.content_event1 {
+			border: 2px solid #2f4d40;
+		}
+
+		.atas_kiri {
+			background-color: #2f4d40;
+		}
+
+		.atas_kanan {
+			background-color: #2f4d40;
+		}
+
+		.bawah_kiri {
+			background-color: #2f4d40;
+		}
+
+		.bawah_kanan {
+			background-color: #2f4d40;
+		}
+
+		.form-input {
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #2f4d40;
+			background-color: white;
+		}
+
+		#overlay_popup {
+			position: fixed;
+			/* Sit on top of the page content */
+			width: 100%;
+			/* Full width (cover the whole page) */
+			height: 100%;
+			/* Full height (cover the whole page) */
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0, 0, 0, 0.6);
+			/* Black background with opacity */
+			;
+		}
+	</style>
+
+	<style>
+		@media(max-width : 720px) {
+			#fh5co-header {
+				background-image: url(https://grinvitation.com/00.asset/images/wungatetenwedding/background_mobile_2509_14-58-31.jpg);
+				background-attachment: scroll;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+				background-size: cover;
+				height: 700px;
+			}
+
+			#fh5co-header2 {
+				background-image: url(https://grinvitation.com/00.asset/images/wungatetenwedding/background_mobile_2509_14-58-31.jpg);
+				background-attachment: scroll;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+				background-size: cover;
+				height: 100vh;
+			}
+
+			.br {
+				margin-left: 10px;
+			}
+
+
+			#section07 a span {
+				margin-top: 380px;
+			}
+
+			.border-home {
+				margin-top: -80px;
+			}
+
+			.icon_covid {
+				width: 40%;
+				float: left;
+				margin-left: 5%;
+				margin-right: 5%;
+				margin-top: 20px;
+			}
+		}
+
+		@media(min-width : 720px) {
+			.icon_covid {
+				width: 15%;
+				float: left;
+				margin-left: 8%;
+				margin-top: 20px;
+			}
+
+			#fh5co-header {
+				background-image: url(https://grinvitation.com/00.asset/images/wungatetenwedding/background_desktop_2509_14-57-37.jpg);
+				background-attachment: fixed;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+				background-size: cover;
+				height: 700px;
+			}
+
+			#fh5co-header2 {
+				background-image: url(https://grinvitation.com/00.asset/images/wungatetenwedding/background_desktop_2509_14-57-37.jpg);
+				background-attachment: fixed;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+				background-size: cover;
+				height: 100vh;
+			}
+
+			.br {
+				margin-left: 10px;
+			}
+
+
+
+			#section07 a span {
+				margin-top: 120px;
+			}
+
+			.border-home {
+				margin-top: -250px;
+			}
+		}
+	</style>
+
+
+	<style type="text/css">
+		@font-face {
+			font-family: 'Font Digital';
+			src: url('GracedScriptPersonalUse-V5XV.ttf');
+		}
+
+		@font-face {
+			font-family: 'Font Digital 2';
+			src: url('Daniels Signature DEMO.ttf');
+		}
+
+		#font_digital {
+			font-family: 'Font Digital';
+		}
+
+		#font_digital_2 {
+			font-family: 'Font Digital 2';
+			font-size: 60px;
+		}
+
+		#font_digital_2 span {
+			font-family: Montserrat, sans-serif;
+			text-transform: uppercase;
+			color: #474848;
+			margin-top: -20px;
+		}
+
+		.alamat_saja {
+			font-family: Cormorant Infant, serif;
+			font-size: 28px;
+			color: #474848;
+			text-transform: uppercase;
+		}
+
+		.alamat_saja span {
+			font-family: Cormorant Infant, serif;
+			font-size: 14px;
+			color: #474848;
+			text-transform: uppercase;
+			display: block;
+			margin-top: -5px;
+		}
+
+		#contoh1::-webkit-input-placeholder {
+			color: #2f4d40;
+		}
+	</style>
+
+	<title>Wunga Teten Wedding</title>
+	<script type="text/javascript" charset="UTF-8" src="assets/common.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="assets/util.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="assets/common.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="assets/util.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="assets/common.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="assets/util.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="assets/stats.js"></script>
+</head>
+
+<body style="background-color: white; overflow-x: hidden;" class="">
+
+	<div class="modal fade right" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel"
+		aria-hidden="true" style="overflow: hidden; display: none;" static'="" data-keyboard="false" '="">
+                        <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+                            <div class="modal-content-full-width modal-content ">
+                                <div id="fh5co-header2">
+                                    <div id="overlay_popup" style="text-align:center; color:white;">
+                                        
+                                        <div style="bottom:50px;width:100%;position:absolute;">
+                                            <div style="color:#2f4d40;font-family: Lora, serif;">
+                            					    
+                                                    <span style="width:90%;color:white;font-family: Montserrat, sans-serif;display:block;font-size:11px;margin-bottom:5px;letter-spacing:1px;">
+                                                        Dengan senang hati mengundang Anda untuk hadir di hari pernikahan kami
+                                                    </span>
+                                                </div>
+                            				    
+                                            <span style="color:white;font-family: Cormorant Infant, serif;display:block;font-size:40px;margin-bottom:5px;letter-spacing:-1px;">
+                                                Wunga &amp; Teten
+                                           </span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <button type="button" class="btn" data-dismiss="modal" onclick="playAudio()" style="border:1px solid #ffffff;background-color:transparent;color:white;font-size:13px;letter-spacing:1px;margin-top:10px;">BUKA UNDANGAN</button>
+                                            <div style="color:white;font-family: Lora, serif;margin-top:10px;bottom:10px;">
+                                                <span style="font-family: Cormorant Infant, serif; font-weight:bold;letter-spacing:1px;display:block;font-size:12px;">
+                                                    grinvitation.com
+                                                </span>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					
+			<audio loop="" preload="auto" id="myAudio">
+			  <source src="assets/Beautiful%2520In%2520White%2520-%2520Shane%2520Filan.mp3">
+			</audio>
+			<a onclick="playAudio()" type="button" id="un-mute1" class="float" style="display: none;"><img src="assets/music-mute.png" width="30px;"></a>
+			<a onclick="pauseAudio()" type="button" id="mute1" class="float" style="display: inline-block;"><img src="assets/music.png" width="30px;"></a>
+			<!--=========== AWAL MENU =============== --> 
+			<div class="menu">
+				<div class="menu_content">
+				  <a href="#home" class="logo_menu" data-scroll="">Wunga Teten Wedding</a>
+				  <a href="#" class="nav-toggle" aria-hidden="true">Menu</a><nav class="nav-collapse nav-collapse-0 closed" style="transition: max-height 284ms ease 0s; position: relative;" aria-hidden="false">
+					<ul>
+					  <li class="menu-item"><a href="#home" data-scroll="">BERANDA</a></li>
+					  
+					  
+					  <li class="menu-item"><a href="#couple" data-scroll="">MEMPELAI</a></li>
+					  <li class="menu-item"><a href="#event" data-scroll="">DETAIL ACARA</a></li>
+					   <li class="menu-item"><a href="#photo" data-scroll="">GALERI</a></li><li class="menu-item"><a href="#wishes" data-scroll="">UCAPAN DAN DOA</a></li>
+					  
+					</ul>
+				  </nav>
+				 </div>
+			</div>
+			<!--=========== AKHIR MENU =============== -->
+			
+			<div id="home" style="z-index:1;">
+					<div class="tp-banner-container" style="max-height: none; overflow: visible; height: 957px;">
+						<div class="tp-banner revslider-initialised tp-simpleresponsive hovered" id="revslider-834" style="height: 100%; max-height: none;">
+							<ul style="display: block; overflow: hidden; width: 100%; height: 100%; max-height: none;">
+								<!-- SLIDE  -->
+								
+    								<li data-transition="boxslide" data-slotamount="5" data-masterspeed="700" style="width: 100%; height: 100%; overflow: hidden; visibility: visible; left: 0px; top: 0px; z-index: 18; opacity: 1;">
+    									<!-- MAIN IMAGE -->
+        									
+    											    <div class="slotholder" style="width:100%;height:100%;" data-duration="undefined" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="center top" data-kenburns="undefined" data-easeme="undefined" data-bgfit="cover" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined"><div class="tp-bgimg defaultimg" data-lazyload="undefined" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" data-lazydone="undefined" src="https://grinvitation.com/00.asset/images/wungatetenwedding/background_desktop_2509_14-57-37.jpg" data-src="https://grinvitation.com/00.asset/images/wungatetenwedding/background_desktop_2509_14-57-37.jpg" style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;https://grinvitation.com/00.asset/images/wungatetenwedding/background_desktop_2509_14-57-37.jpg&quot;); background-size: cover; background-position: center top; width: 100%; height: 100%; opacity: 0;"></div></div>
+    										
+    									<!-- LAYERS -->
+    									<div class="tp-caption mediumlarge_light_white_center customin customout start" data-x="center" data-voffset="100" data-y="center" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1000" data-start="500" data-easing="Back.easeInOut" data-endspeed="300" style="min-height: 0px; min-width: 0px; line-height: 40px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 34px; left: 804px; top: 578.5px; visibility: visible; opacity: 0; transform: translate3d(0px, 0px, 0px) scale(0.75); transform-origin: 50% 50% 0px;">
+    											<div class="style_opening_image" style="text-align:center; z-index: 6; white-space: nowrap; line-height: 22px; font-weight: 400; color: #FFFFFF; letter-spacing: 0px;font-family:Kurale; margin-top:-100px;">	
+    											
+    													    <span style="text-transform:uppercase;font-family: Montserrat, sans-serif;font-size:12px; font-style:italic; letter-spacing:1px;">UNDANGAN PERNIKAHAN</span><br>
+    													    
+    													
+    											</div>
+    										
+    									</div>
+    
+    
+    									<!-- LAYER NR. 4 -->
+    									<div class="tp-caption mediumlarge_light_white_center customin customout start" data-x="center" data-y="center" data-voffset="160" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1000" data-start="1000" data-easing="Back.easeInOut" data-endspeed="300" style="min-height: 0px; min-width: 0px; line-height: 40px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 34px; left: 811px; top: 638.5px; visibility: visible; opacity: 0; transform: translate3d(0px, 0px, 0px) scale(0.75); transform-origin: 50% 50% 0px;">
+    											
+    										        <div class="style_opening" style="z-index: 5; white-space: nowrap; line-height: 22px; font-weight: 400; color: #2f4d40; letter-spacing: 0px;font-family:Aladin; margin-top:-100px;">
+    										        
+									                <div style="margin-top:-10px; margin-bottom:35px; color:white; font-family: Cormorant Infant, serif; font-size:80px; letter-spacing:-2px;">
+            										Wunga &amp;
+                									</div>
+                									<div style="margin-top:0px; margin-bottom:20px; color:white; font-family: Cormorant Infant, serif; font-size:80px; letter-spacing:-2px;">
+                										Teten
+                									</div>
+									                
+    											</div>
+    											
+    									</div>
+    									
+    									<!-- LAYER NR. 4 -->
+    									<div class="tp-caption mediumlarge_light_white_center customin customout start" data-x="center" data-y="center" data-voffset="205" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1000" data-start="1500" data-easing="Back.easeInOut" data-endspeed="300" style="min-height: 0px; min-width: 0px; line-height: 40px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 34px; left: 871px; top: 581.5px; visibility: visible; opacity: 0; transform: translate3d(0px, 0px, 0px) scale(0.75); transform-origin: 50% 50% 0px;">
+    										
+									            <div class="style_opening_tanggal" style="z-index: 6; white-space: nowrap; line-height: 22px; font-weight: 400; color: #FFFFFF; letter-spacing: 0px;font-family:Kurale; margin-top:50px;">
+									            
+									        
+											<div style="text-transform:uppercase;color:white; display:block; font-family: Montserrat, sans-serif; font-size:12px; font-style:italic; letter-spacing:1px;">Rabu, 25 Agustus 2021
+											
+    											<div style="clear:both; display:block;"></div>
+                                                <section id="section07">
+                                                  <a href="#couple" data-scroll="">
+                                                  <span></span>
+                                                  <span></span>
+                                                  <span></span>
+                                                  </a>
+                                                </section>
+                                                <span style="font-family:Quattrocento, serif;font-style:italic;letter-spacing:2px;color:#ffffff;font-weight:normal;display:block;font-size:10px;margin-top:100px">
+                                                        GESER KE BAWAH
+                                                    </span>
+                                                
+    											
+    											</div>
+											</div>
+											
+											
+											
+											
+    										        
+    									</div>
+    
+    										
+    								</li>
+    								
+    								<li data-transition="boxslide" data-slotamount="5" data-masterspeed="700" style="width: 100%; height: 100%; overflow: hidden; visibility: visible; left: 0px; top: 0px; z-index: 20; opacity: 1;">
+    									<!-- MAIN IMAGE -->
+        									
+    											    <div class="slotholder" style="width:100%;height:100%;" data-duration="undefined" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="center top" data-kenburns="undefined" data-easeme="undefined" data-bgfit="cover" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined"><div class="tp-bgimg defaultimg" data-lazyload="undefined" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" data-lazydone="undefined" src="https://grinvitation.com/00.asset/images/wungatetenwedding/foto_body_1_2509_15-00-25.jpg" data-src="https://grinvitation.com/00.asset/images/wungatetenwedding/foto_body_1_2509_15-00-25.jpg" style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;https://grinvitation.com/00.asset/images/wungatetenwedding/foto_body_1_2509_15-00-25.jpg&quot;); background-size: cover; background-position: center top; width: 100%; height: 100%; opacity: 1;"></div></div>
+    										
+    									<!-- LAYERS -->
+    									<div class="tp-caption mediumlarge_light_white_center customin customout start" data-x="center" data-voffset="100" data-y="center" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1000" data-start="500" data-easing="Back.easeInOut" data-endspeed="300" style="min-height: 0px; min-width: 0px; line-height: 40px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 34px; left: 804px; top: 578.5px; visibility: visible; opacity: 1; transform: translate3d(0px, 0px, 0px); transform-origin: 50% 0% 0px;">
+    											<div class="style_opening_image" style="text-align:center; z-index: 6; white-space: nowrap; line-height: 22px; font-weight: 400; color: #FFFFFF; letter-spacing: 0px;font-family:Kurale; margin-top:-100px;">	
+    											
+    													    <span style="text-transform:uppercase;font-family: Montserrat, sans-serif;font-size:12px; font-style:italic; letter-spacing:1px;">UNDANGAN PERNIKAHAN</span><br>
+    													    
+    													
+    											</div>
+    										
+    									</div>
+    
+    
+    									<!-- LAYER NR. 4 -->
+    									<div class="tp-caption mediumlarge_light_white_center customin customout start" data-x="center" data-y="center" data-voffset="160" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1000" data-start="1000" data-easing="Back.easeInOut" data-endspeed="300" style="min-height: 0px; min-width: 0px; line-height: 40px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 34px; left: 811px; top: 638.5px; visibility: visible; opacity: 1; transform: translate3d(0px, 0px, 0px); transform-origin: 50% 0% 0px;">
+    											
+    										        <div class="style_opening" style="z-index: 5; white-space: nowrap; line-height: 22px; font-weight: 400; color: #2f4d40; letter-spacing: 0px;font-family:Aladin; margin-top:-100px;">
+    										        
+									                <div style="margin-top:-10px; margin-bottom:35px; color:white; font-family: Cormorant Infant, serif; font-size:80px; letter-spacing:-2px;">
+            										Wunga &amp;
+                									</div>
+                									<div style="margin-top:0px; margin-bottom:20px; color:white; font-family: Cormorant Infant, serif; font-size:80px; letter-spacing:-2px;">
+                										Teten
+                									</div>
+									                
+    											</div>
+    											
+    									</div>
+    									
+    									<!-- LAYER NR. 4 -->
+    									<div class="tp-caption mediumlarge_light_white_center customin customout start" data-x="center" data-y="center" data-voffset="205" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1000" data-start="1500" data-easing="Back.easeInOut" data-endspeed="300" style="min-height: 0px; min-width: 0px; line-height: 40px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 34px; left: 871px; top: 581.5px; visibility: visible; opacity: 1; transform: translate3d(0px, 0px, 0px); transform-origin: 50% 0% 0px;">
+    										
+									            <div class="style_opening_tanggal" style="z-index: 6; white-space: nowrap; line-height: 22px; font-weight: 400; color: #FFFFFF; letter-spacing: 0px;font-family:Kurale; margin-top:50px;">
+									            
+									        
+											<div style="text-transform:uppercase;color:white; display:block; font-family: Montserrat, sans-serif; font-size:12px; font-style:italic; letter-spacing:1px;">Rabu, 25 Agustus 2021
+											
+    											<div style="clear:both; display:block;"></div>
+                                                <section id="section07">
+                                                  <a href="#couple" data-scroll="">
+                                                  <span></span>
+                                                  <span></span>
+                                                  <span></span>
+                                                  </a>
+                                                </section>
+                                                <span style="font-family:Quattrocento, serif;font-style:italic;letter-spacing:2px;color:#ffffff;font-weight:normal;display:block;font-size:10px;margin-top:100px">
+                                                        GESER KE BAWAH
+                                                    </span>
+                                                
+    											
+    											</div>
+											</div>
+											
+											
+											
+											
+    										        
+    									</div>
+    
+    										
+    								</li>
+    								
+							</ul>
+							<div class="tp-bannertimer" style="width: 95.64%; visibility: visible;"></div>
+						<div class="tp-loader spinner0" style="visibility: hidden; opacity: 0;"><div class="dot1"></div><div class="dot2"></div><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div></div>
+					<div class="tp-bullets simplebullets round" style="bottom: 20px; left: 50%; margin-left: -15px;"><div class="bullet first"></div><div class="bullet last selected"></div><div class="tpclear"></div></div><div style="position: absolute; top: 478px; margin-top: -20px; left: 20px;" class="tp-leftarrow tparrows default"></div><div style="position: absolute; top: 478px; margin-top: -20px; right: 20px;" class="tp-rightarrow tparrows default"></div></div>
+					<script type="text/javascript">
+
+						var revapi;
+
+						jQuery(document).ready(function () {
+
+							revapi = jQuery(' .tp-banner').revolution({
+								delay: 5000, startwidth: 1170, startheight: 500, hideThumbs: 10,
+								fullWidth: 'off', fullScreen: 'on', fullScreenOffsetContainer: ''
+							});
+						}); //ready </script>
+	</div>
+
+	<div class="space1"></div>
+
+
+
+	<div class="content" id="couple">
+		<div class="container">
+			<div class="animatedParent" data-sequence="500">
+				<div class="happy_couple">
+					<p class="animated growIn slower" data-id="1"
+						style="font-family: Montserrat, sans-serif; font-size:14px; letter-spacing:1px;">
+						<img src="assets/basmallah.png" style="width:200px;display:block;margin-bottom:10px;">
+						Assalamu'alaikum Wr. Wb.<br><br>
+						Atas nama Allah SWT yang Maha Pengasih dan Maha Penyayang,
+						kami dengan senang hati untuk mengundang anda dan berbagi kegembiraan di
+						pernikahan kami
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="couple-wrap">
+				<div class="couple-half" style="margin-top:10px;margin-bottom:10px;">
+					<div class="animatedParent" data-sequence="500">
+						<div class="animated growIn" data-id="1">
+							<div class="groom" style="text-align:center;">
+								<img src="assets/CPW_2509_15-01-17.jpg" alt="groom" class="img-responsive">
+
+							</div>
+						</div>
+						<div class="desc-groom">
+							<h3 class="animated growIn slower" data-id="2"
+								style="font-family: Cormorant Infant, serif;">Wunga Adnin Amd.Keb</h3>
+							<!-- untuk deskripsi mempelai -->
+							<p class="animated growIn slower" data-id="3"
+								style="color: #2f4d40; font-family: Montserrat, sans-serif;"><i
+									style="font-size:12px; color: #2f4d40;">Putri Tercinta</i><br>Bapak Deni Rahmadi
+								Barkah (Kepala Bagian Umum RSUD Majalaya)<br>Ibu Ai Yayah</p>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="couple-half" style="margin-top:10px;margin-bottom:10px;">
+					<div class="animatedParent" data-sequence="500">
+						<div class="animated growIn" data-id="1">
+							<div class="bride" style="text-align:center;">
+								<img src="assets/CPP_2509_15-01-17.jpg" alt="groom" class="img-responsive">
+
+							</div>
+						</div>
+						<div class="desc-bride">
+							<h3 class="animated growIn slower" data-id="2"
+								style="font-family: Cormorant Infant, serif;">Sertu Teten Mulyadi</h3>
+							<!-- untuk deskripsi mempelai -->
+							<p class="animated growIn slower" data-id="3"
+								style="color: #2f4d40;font-family: Montserrat, sans-serif;"><i
+									style="font-size:12px; color: #2f4d40;">Putra Tercinta</i><br>Bapak Dayat
+								Hidayat<br>Ibu Pinah Aminah</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="animatedParent" data-sequence="500">
+					<div class="animated growIn" data-id="1">
+						<p class="heart" style="text-align:center;"><i class="fa fa-heart"
+								style="color:#2f4d40; margin-top:-10px;"></i></p>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+		<div class="container">
+			<div class="animatedParent" data-sequence="500">
+				<div class="happy_couple">
+
+					<div class="animated growIn slower" data-id="1" style="margin-top:30px;">
+						<img src="assets/bungaAA.png" style="width:100px; background-color:#2f4d40;">
+					</div>
+					<span class="animated growIn slower" data-id="2" style="margin-top:5px;">
+
+						<p style="text-transform:uppercase;font-family: Cormorant Infant, serif; font-size:20px;">
+							<span
+								style="text-transform:uppercase;font-family: Cormorant Infant, serif; font-size:24px; margin-bottom:-10px;color:#484949;">Rabu</span>
+							25 Agustus 2021
+						</p>
+					</span>
+					<div class="animated growIn slower" data-id="3" style="margin-top:-30px;">
+						<img src="assets/bungaBB.png" style="width:80px; background-color:#2f4d40;">
+					</div>
+					<div class="animated growIn slower" data-id="4" style="margin-top:20px;">
+						<div
+							style="color:#484949; display:block; font-family: Montserrat, sans-serif; font-size:12px; letter-spacing:1px;">
+							Merupakan suatu kehormatan dan kebahagian bagi kami apabila
+							Bapak/Ibu/Saudara/i berkenan hadir dan memberikan Doa restu kepada kedua
+							mempelai
+						</div>
+					</div>
+
+					<div class="animated growIn slower" data-id="5" style="margin-top:20px;">
+
+						<div id="hitungmundur1" class="gaya" style="background-color:#2f4d40">-20<span>HARI</span></div>
+						<div id="hitungmundur2" class="gaya" style="background-color:#2f4d40">0<span>JAM</span></div>
+						<div id="hitungmundur3" class="gaya" style="background-color:#2f4d40">-56<span>MENIT</span>
+						</div>
+						<div id="hitungmundur4" class="gaya" style="background-color:#2f4d40">-46<span>DETIK</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="space1" style="display:block; clear:both;"></div>
+	<div class="content" style="background-color:#2f4d40;padding-top:30px;padding-bottom:30px;">
+		<div class="container">
+			<div class="animatedParent" data-sequence="500">
+				<div class="happy_couple">
+					<p class="animated growIn slower" data-id="1"
+						style="font-family: Montserrat, sans-serif; font-size:14px; letter-spacing:1px;color:#ffffff;">
+						<img src="assets/arrum1.png" style="width:100%;display:block;margin-bottom:10px;">
+						<br><br>
+						Dan di antara tanda-tanda kekuasaan-Nya lah Dia menciptakan
+						untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan
+						merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan
+						sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat
+						tanda-tanda bagi kaum yang berfikir.
+						<br>QS Ar-Rum : 21
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<style>
+		#map-canvas {
+			height: 450px;
+		}
+	</style>
+	<script src="assets/js" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+	<div class="space1" style="display:block; clear:both;"></div>
+	<div class="content" id="event">
+		<div class="animatedParent" data-sequence="500" style="margin-bottom:-60px;">
+			<div class="happy_couple">
+				<p class="animated growIn slower" id="font_digital_2" data-id="1" style="font-size:36px;">Detail Acara
+				</p>
+
+			</div>
+
+			<div style="clear:both;display:block;"></div>
+			<div class="happy_couple">
+				<span style=" font-family: Cormorant Infant, serif; font-size:22px; color:#474848;">AKAD NIKAH</span>
+				<span style="margin-top:10px;">
+					<span
+						style="font-family: Montserrat, sans-serif;color:#474848; letter-spacing:1px; margin-top:-25px;text-transform:uppercase;font-size:13px;">25
+						Agustus 2021</span>
+					<span
+						style="font-family: Montserrat, sans-serif;color:#474848; letter-spacing:1px; margin-top:-20px;">
+						08:00 WIB - Selesai
+					</span>
+				</span>
+				<div style="clear:both;display:block;"></div>
+
+
+
+			</div>
+
+
+			<div style="clear:both;display:block;"></div>
+			<div class="happy_couple" style="margin-top:-50px;">
+
+				<span style="font-family: Cormorant Infant, serif; font-size:20px; color:#474848;">RESEPSI</span>
+				<span style="margin-top:10px;">
+					<span
+						style="font-family: Montserrat, sans-serif;color:#474848; letter-spacing:1px; margin-top:-25px;text-transform:uppercase;font-size:13px;">25
+						Agustus 2021</span>
+					<span
+						style="font-family: Montserrat, sans-serif;color:#474848; letter-spacing:1px; margin-top:-20px;">
+
+						<span
+							style="font-family: Montserrat, sans-serif;color:#474848; letter-spacing:1px; text-transform:uppercase;margin-bottom:-20px;">
+							Sesi 1 : 11:00 - 12:30 WIB
+						</span>
+
+						<span
+							style="font-family: Montserrat, sans-serif;color:#474848; letter-spacing:1px; text-transform:uppercase;margin-bottom:-20px;">
+							Sesi 2 : 12:30 - 14:00 WIB
+						</span>
+
+
+					</span>
+				</span>
+
+
+			</div>
+
+			<div class="happy_couple" style="margin-top:-50px;">
+				<div class="alamat_saja" style="font-size:20px;">Gedung Graha Alif Solokanjeruk</div>
+				<span style="margin-top:10px;">
+					<span
+						style="font-family: Montserrat, sans-serif;color:#474848; letter-spacing:1px; margin-top:-15px;">Kp.
+						Babakan Lapang RT01/RW07, desa Solokanjeruk, kec. Solokanjeruk, kab. Bandung, Jawa Barat</span>
+				</span>
+				<button data-toggle="modal" data-target="#exampleModal-umum" class="btn"
+					style="margin-top:-70px;padding:10px;font-size:12px; letter-spacing:4px; font-family: Montserrat, sans-serif;background-color:#2f4d40;color:#ffffff;">
+					LIHAT LOKASI ACARA</button>
+			</div>
+
+		</div>
+
+
+
+
+	</div>
+
+
+	<div class="space1"></div>
+	<div class="content" id="photo">
+		<div class="animatedParent" data-sequence="500">
+			<div class="happy_couple">
+				<p class="animated growIn slower" id="font_digital_2" data-id="1"
+					style="font-family: Cormorant Infant, serif; font-size:38px;">Galeri</p>
+				<div class="animated growIn slower" data-id="1" style="margin-top:-30px;margin-bottom:-20px;">
+					<div class="line"><img src="assets/bungaBB.png" style="width:80px; background-color:#2f4d40;"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="animated fadeInUp" data-id="2">
+
+					<div class="col-md-4" style="margin-bottom:20px;">
+						<img src="assets/galery_2509_1_15-08-11.jpg">
+					</div>
+
+					<div class="col-md-4" style="margin-bottom:20px;">
+						<img src="assets/galery_2509_2_15-08-11.jpg">
+					</div>
+
+					<div class="col-md-4" style="margin-bottom:20px;">
+						<img src="assets/galery_2509_3_15-08-11.jpg">
+					</div>
+					<div class="clear"></div>
+					<div class="col-md-4" style="margin-bottom:20px;">
+						<img src="assets/galery_2509_4_15-08-11.jpg">
+					</div>
+
+					<div class="col-md-4" style="margin-bottom:20px;">
+						<img src="assets/galery_2509_5_15-08-11.jpg">
+					</div>
+
+					<div class="col-md-4" style="margin-bottom:20px;">
+						<img src="assets/galery_2509_6_15-08-11.jpg">
+					</div>
+					<div class="clear"></div>
+					<div class="col-md-4" style="margin-bottom:20px;">
+						<img src="assets/galery_2509_7_15-08-11.jpg">
+					</div>
+
+					<div class="col-md-4" style="margin-bottom:20px;">
+						<img src="assets/galery_2509_8_15-08-11.jpg">
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<div class="space1" style="display:block; clear:both;"></div>
+	<div class="content" style="background-color:#2f4d40;padding-top:30px;padding-bottom:30px;">
+		<div class="container">
+			<div class="animatedParent" data-sequence="500">
+				<div class="happy_couple">
+
+
+					<p class="animated growIn slower" id="font_digital_2" data-id="1"
+						style="font-family: Cormorant Infant, serif; font-size:30px;color:#ffffff;">Protokol Kesehatan
+					</p>
+				</div>
+				<div class="happy_couple" style="margin-top:-20px;">
+					<p class="animated growIn slower" data-id="1"
+						style="font-family: Montserrat, sans-serif; font-size:14px; letter-spacing:1px;color:#ffffff;">
+						Dengan tidak mengurangi rasa hormat. Sehubungan dengan
+						adanya wabah Covid-19, dimohon untuk seluruh tamu undangan agar
+						melakukan pengecekan suhu sebelum memasuki area acara, selalu
+						menggunakan masker, menjaga kebersihan tangan dan menjaga jarak aman
+						selama acara berlangsung.
+
+					</p>
+					<div class="icon_covid">
+						<img src="assets/ms.png" style="width:100%;">
+						<span
+							style="color:#ffffff;display:block;font-size:10px;text-transform:uppercase;font-family: Montserrat, sans-serif;">menggunakan
+							masker</span>
+					</div>
+
+					<div class="icon_covid">
+						<img src="assets/ct.png" style="width:100%;">
+						<span
+							style="color:#ffffff;display:block;font-size:10px;text-transform:uppercase;font-family: Montserrat, sans-serif;">menjaga
+							kebersihan tangan</span>
+					</div>
+
+					<div class="icon_covid">
+						<img src="assets/hs.png" style="width:100%;">
+						<span
+							style="color:#ffffff;display:block;font-size:10px;text-transform:uppercase;font-family: Montserrat, sans-serif;">menggunakan
+							hand sanitizer</span>
+					</div>
+
+					<div class="icon_covid">
+						<img src="assets/pd.png" style="width:100%;">
+						<span
+							style="color:#ffffff;display:block;font-size:10px;text-transform:uppercase;font-family: Montserrat, sans-serif;">Menjaga
+							jarak aman fisik</span>
+					</div>
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="space1"></div>
+
+
+	<div class="content" id="wishes">
+		<div class="animatedParent" data-sequence="500">
+			<div class="container">
+				<div class="happy_couple" style="margin-bottom:0px;">
+					<div class="happy_couple" style="margin-bottom:0px;">
+
+						<p class="animated growIn slower" id="font_digital_2" data-id="1"
+							style="font-family: Cormorant Infant, serif; font-size:36px; font-style:italic">Ucapan dan
+							Doa</p>
+
+
+					</div>
+					<div class="animated growIn slower" data-id="1" style="margin-top:-30px;margin-bottom:-20px;">
+						<div class="line"><img src="assets/bungaBB.png" style="width:80px; background-color:#2f4d40;">
+						</div>
+					</div>
+				</div>
+
+				<div class="animated fadeInUp" data-id="2" style="margin-top:-50px;">
+					<div id="fh5co-started">
+						<form class="form-inline" method="post" action="act-wishes">
+							<input type="hidden" name="id_event" value="2509">
+							<div class="form-group" style="display:block; width:100%;">
+
+								<div style="display:block; color:#2f4d40;padding-left:10px; margin-top:10px;">Nama</div>
+								<input type="hidden" name="header_link"
+									value="https://grinvitation.com/wungatetenwedding">
+								<input type="text" class="form-input" id="name" name="nama" required=""
+									style="width:100%; color:#2f4d40">
+								<input type="hidden" name="id_si" value="0">
+
+							</div>
+
+							<div style="clear:both;margin-bottom:5px;"></div>
+							<div style="display:block; color:#2f4d40;padding-left:10px; margin-top:10px;">Ucapan dan Doa
+							</div>
+							<div class="form-group" style="display:block; width:100%;">
+								<textarea class="form-input" id="wishes" rows="10" name="isi_ucapan" required=""
+									style="width:100%; color:#2f4d40;"></textarea>
+							</div>
+
+
+							<div style="clear:both;margin-bottom:5px;"></div>
+							<div style="width:100%;">
+								<button type="submit" class="btn btn-block"
+									style="color:white; background-color:#2f4d40;">KIRIM</button>
+
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="clear"><br><br></div>
+		</div>
+	</div>
+
+	<div class="space1" style="display:block; clear:both;"></div>
+	<div class="content" style="background-color:#2f4d40;padding-top:30px;padding-bottom:30px;">
+		<div class="container">
+			<div class="animatedParent" data-sequence="500">
+				<div class="happy_couple">
+
+
+					<p class="animated growIn slower" id="font_digital_2" data-id="1"
+						style="font-family: Cormorant Infant, serif; font-size:34px;color:#ffffff;">Ucapan dan Doa</p>
+				</div>
+				<div class="happy_couple" style="margin-top:-50px;">
+					<p class="animated growIn slower" data-id="1"
+						style="font-family: Montserrat, sans-serif; font-size:14px; letter-spacing:1px;color:#ffffff;">
+					</p>
+					<div class="swiper-container swiper-container-horizontal">
+						<div class="swiper-wrapper">
+
+							<div class="swiper-slide swiper-slide-active" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										iis tdr tppkk desa langensari
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										semoga samawa selama nya
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide swiper-slide-next" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Suchi Hendriani
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Baarakallahu laka wa baarakaa alaika wa jamaa
+										bainakumaa fii khoirin." (Semoga Allah memberkahimu dalam segala hal
+										(yang baik) dan mempersatukan kamu berdua dalam kebaikan.) 😘
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Suchi Hendriani
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Baarakallahu laka wa baarakaa alaika wa jamaa
+										bainakumaa fii khoirin." (Semoga Allah memberkahimu dalam segala hal
+										(yang baik) dan mempersatukan kamu berdua dalam kebaikan.) 😘
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Gavin
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Selamat menempuh hidup baru ya Om Yadi dan Tante.
+										Semoga selalu bahagia dan dlm lindungan Allah. Semoga dikarunia momongan
+										yg sholih/sholiha. Dan jd keluarga SaMaWa ❤️❤️
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Dedeh Sukaesih, pokja 1 kec Solokan Jeruk
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Barakallahu laka wabaroka alaika baina kunna fikhoir.<br>
+										Semoga Sakinah Mawaddah Warahmah
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Kel dedih herwanto
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Selamat menempuh hidup baru.semoga menjadi keluarga
+										samawa Mendapatkan kebahagiaan dan semua keinginan dapat terlaksana dan
+										ada dalam lindungan Allah SWT Aamiin Yarobal Allamiin.
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										drg. Rotua Chatarina, MHM
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Selamat menempuh hidup baru ... Semoga menjadi keluarga yang SAMAWA... Aminnn
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Teto Rosyati
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Selamat menempuh hidup baru neng wunga semoga
+										menjadi keluarga yang SAMAWA ..penuh kebahagiaan yang selalu menyertai
+										mu
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										yeti pkk desa langensari
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										semoga neng unga dan cep teten menjadi keluarga yg sakinah mawadah warohmah
+										cepat dapat momongan ya neng
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Winna stani rosalina
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Alhamdulillah ngiring bingah unga, Barakallahu laka
+										wa baraka alaika wa jama’a bainakuma fi khoir . Semoga sehat semuanya,
+										dimudahkan, dilancarkan segala prosesnya ya nga ❤️
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Abdul Kadir :: papua /jakarta
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Alhamdulillah, selamat atas ikatan pernikahan
+										kalian. Semoga pernikahan kalian senantiasa dilimpahi berkah, cinta,
+										kebaikan, dan kebahagiaan. Jazakallahu khairan khatira......
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Farida Rofiran
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Pernikahan ini adalah awal kehidupan baru kalian,
+										semoga membawa berkah hingga akhir hayat dan kalian akan selalu
+										memperoleh rahmat-Nya. Selamat menempuh kehidupan yang baru. 🤗😍❤️🙏
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Farida Rofiran
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Pernikahan ini adalah awal kehidupan baru kalian,
+										semoga membawa berkah hingga akhir hayat dan kalian akan selalu
+										memperoleh rahmat-Nya. Selamat menempuh kehidupan yang baru. 🤗😍❤️🙏
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Ansar pale,na
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Selamat,sukses dan bahagia selalu pot,semohlgah cepat di berikan momongan
+										,amin.komando.
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Oci
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Semoga kalian bahagia
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Deni sopian
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Selamat menempuh hidup baru brorher semoga sakinah mawadah warohmah aminnn
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Rivki juniar
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Selamat kepada pak teten dan istri...semoga Allah
+										SWT senantiasa melimpahkan rahmat dan hidayahnya kepada kedua
+										mempelai..menjadi keluarga yang sakinah, mawwadah, warahmah...sampai
+										maut memisahkan...dan semoga segera diberikan momongan..amin..<br>
+										<br>
+										<br>
+										NB : terima kasih atas undangannya...tanpa mengurangi rasa hormat mohon
+										maaf saya tidak bisa hadir karena bertepatan dengan 40 hari wafatnya
+										ibunda...
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Sertu A M Saragih
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Selamat kepada Sertu Teten, semoga acaranya di beri
+										kelancaran dan menjadi keluarga yang bahagia🙏🏻🙏🏻🙏🏻
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Praka dea wahyudi
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Di paringi rahmat allah swt bang.jadi keluarga
+										sakidah mawahdah jeung warohmah aminn ya allah ya robbal alamin
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Abimanyu satria permana putra dari bp iman dan ibu iis
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Selamat aa semoga menjadi keluarga yg sakinah
+										mawadah warohmah hampura keluarga ti Riau teu tiasa uih ka lembur 🙏
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Roy Marshal
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Selamat menempuh hidup baru bang Teten &amp; mba
+										Wunga semoga menjadi keluarga yang sakinah mawadah warohmah, dilancarkan
+										semua urusannya, langgeng sampai akhir masa serta segera diberi
+										momongan yang sholeh dan Sholehah amin.🙏🏻🙏🏻🙏🏻🙏🏻
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Keluarga besar agus syaikhydin
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Slamat ya om smga jd keluarga sakinah mawadah warohmah,n cpt d ksh
+										momongan.amiiiiiiiiiin
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Zaki APB
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Selamat Boss.......😎
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										H.Benny Rustandi - Tangerang
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Dikala kita mau melangkah,hrs di persiapkan pisik n
+										mental,mmg percaya pada putra putri yang sudah berpikir demi
+										melaksanakan Sunnah Nabi Besar Muhammad SAW,barang siapa yang
+										melaksanakan Sunnah Ku,tidak terbesrsit niat yg lain selain membentuk
+										rumah tangga yang Sakinah Mawadah Warahmah 🤲
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Sony Kurniawan.sragen
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										" Happy Wedding Day " .<br>
+										* Selamat mengarungi bahtera rumah tangga.. <br>
+										Semoga Rahmat Tuhan YME senantiasa di limpahkan, hidup dalam damai
+										sejahtera &amp; selalu di berkahi ketika senang maupun duka.. <br>
+										Semoga kisah cinta kalian langgeng sampai akhir hayat 🙏🙏
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										JUNAI ARANDESTA
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Moga" menjadi keluarga sakinnah mawaddah warrohmah,
+										penuh dengan ketentraman dan kedamaian yg selalu dalam lindungan Allah
+										SWT...Amin yra
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Tati Datifah
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Semoga menjadi keluarga samawa
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Rachmat HS Jatinom Klaten
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Semoga dilancarkan acaranya bng, semoga jadi kluarga yg sakinah mawadah
+										warohmah... Aminnnnn
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Riki
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Cing Samawa Ten..Alus undangan na..
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										AULIA FITRIANI
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Teh ungaa selamatyaa, semog menjadi keluarg yang
+										samawa, lancar sampe hari H, bahagia dan sehat selalu yaa 💕
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Kris
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Congratulations nya akang teten mulyadi<br>
+										Finally my little brother getting married <br>
+										Proud and happy
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Dunung Setyawan, SH
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Sy sekeluarga turut happy wedding <br>
+										Semoga menjadi keluarga yg bahagia sakinah mawadah waromah bang 🤲🙏
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										DENNY,SE
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Selamat menempuh hidup baru,semoga ALLOH SWT,melindungiNya,Amin yra
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										SRIYONO ( LAPAS KLATEN )
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Selamat menempuh hidup baru..<br>
+										Semoga SAMAWA<br>
+										<br>
+										Membawa berkah kepada mempelai berdua dan keluarga besar..<br>
+										<br>
+										Salam KOMANDO<br>
+										<br>
+
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Widi Destriani
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Barakallahu laka wabaaraka alaikuma wa jamaa bainakumaa fii khoir.<br>
+										Semoga Sakinah, Mawaddah, Warahmah Wunga &amp;suami 😍😍
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Nurfitri🥰
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Dear unga kesayanganku , selamat menjalankan ibadah
+										terlama , semoga rumahtangganya selalu dilimpahkan kebahagiaan dan
+										keberkahan untuk unga dan suami 🥰<br>
+										Sakinah mawaddah warahmah 🥰❤️
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Yeni
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Samawa teh unga ... Bahagia akhirnyaaaaaaa menemukan jodonya ... Lancar ya sampe
+										hatlri H
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Kelg Wahyudi Cimaung
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Turut berbahagia semoga dilancarkan sampai hari H
+										nya...sehat selalu dan menjadi keluarga yang SaMaWa....aamiin
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Sri Setiawan
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Selamat Menempuh Hidup Baru<br>
+										Semoga B'bahagia Selalu <br>
+										Menjadi Keluarga Sakinah...........<br>
+										Mawaddah dan Warohmah.......<br>
+										Aamiin<br>
+										<br>
+										<br>
+										<br>
+										<br>
+										Salam<br>
+										Keluarga besar Sri.S<br>
+										Serang-Banten<br>
+										<br>
+
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										H.Tb. Mista Mahfudzi (ABAH ANOM) BANTEN
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Assalamualaikum Wr Wb. <br>
+										Yaa Allah Semoga kebahagiaan dan Kesejahteraan senantiasa diberikan kpd kedua
+										mempelai (putra/putri) saudaraku (om Deni RB)<br>
+										dan keturunannya , sehingga menjadi keluarga yg SAKINAH MAWADAH DAN WAROHMAH.
+										Aamiim YRA.
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Refki Ansori
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Semoga SAMAWA SAMPAI JANNAH maaf ya Den ga bisa hadir
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Evita
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Happy wedding cantik,akhirnya semoga jadi keluarga
+										sakinnah mawaddah warrahmah,dijadikan klg dengan rejeki melimpah,cepet
+										dikaruniai momongan amin allohuma amin 🤗💕
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Wida
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Baarakallahu laka wa baarakaa alaika wa jamaa
+										bainakumaa fii khoir, semoga menjadi keluarga yg sakinah mawadah
+										warrahmah Wunga &amp; Suami. Amin
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Inggrit
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Unga selamat, semoga menjadi keluarga yg bahagiaa
+										selamanya, pasangan yg diberkahi dan di Ridhoi Alloh Swt aamiin 🤲 sing
+										enggal dipasihan katurunan anu soleh/solehah aamiin 🥰
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Rindy Hidayanti
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Ungaaaaa, selamat yaaaahh akhirnyaaaa menyebar kabar
+										bahagiaaa, semoga unga sehat semua keluarga sehat untuk hari H nya,
+										semoga unga dan suami menjadi keluarga yang sakinah mawadah warohmah,
+										diksih keturunan yang soleh dan shalehaaaaa, pokonyaaaa ikut bahagiaaa
+										unga yaaaahhhh<br>
+
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Rindy Hidayanti
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Ungaaaaa, selamat yaaaahh akhirnyaaaa menyebar kabar
+										bahagiaaa, semoga unga sehat semua keluarga sehat untuk hari H nya,
+										semoga unga dan suami menjadi keluarga yang sakinah mawadah warohmah,
+										diksih keturunan yang soleh dan shalehaaaaa, pokonyaaaa ikut bahagiaaa
+										unga yaaaahhhh<br>
+
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Rindy Hidayanti
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Ungaaaaa, selamat yaaaahh akhirnyaaaa menyebar kabar
+										bahagiaaa, semoga unga sehat semua keluarga sehat untuk hari H nya,
+										semoga unga dan suami menjadi keluarga yang sakinah mawadah warohmah,
+										diksih keturunan yang soleh dan shalehaaaaa, pokonyaaaa ikut bahagiaaa
+										unga yaaaahhhh<br>
+
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Ganda
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Baarakallahu laka wa baarakaa alaika wa jamaa
+										bainakumaa fii khoir .... Semoga Allah memberkahimu baik dlm keadaan
+										suka maupun Duka &amp; slalu mengumpulkan klian dlm kebaikan, Aamiin Yra
+										...... .🤲🙏
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Asep Susanto
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Barakalloh
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Gamber Irmawan
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Mugia janten keluarga sakinah mawadah warahmah, aamiin 🙏🙏🙏
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Aam Rahmat
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Ngiring bingah, piduana pa mugia lancar acaranya,
+										dijantenkeun keluarga Anu Sakinah, Mawadah, Warohmah tur Barokah.
+										Aamiiin yaa robbal alamiiin.
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Dr. H. Mulja Nunadjat, MH.Kes
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Bismillah, Semoga menjadi keluarga yang Sakinah, mawahdah warahhmah..aamiin ya
+										Robbal a'lamiin.
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Dr. H. Mulja Nunadjat, MH.Kes
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Bismillah, Semoga menjadi keluarga yang Sakinah, mawahdah warahhmah..aamiin ya
+										Robbal a'lamiin.
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Ritha Bachtar
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Slmt mnjalani hidup baru , mdh2 mnjdi jel yg SAMAWA &amp; di Ridoi Alloh SWT.
+										.... <br>
+										Aamiin Yra. ... 🤗🤗
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 1592px;">
+								<div
+									style="width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%">
+									<h3
+										style="text-transform:capitalize;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Nuh Ali
+										<span
+											style="display:block; font-family: Open Sans, Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;">
+
+										</span>
+									</h3>
+									<p
+										style="margin-top:-30px;font-size:14px;font-family: Montserrat, sans-serif;color:#ffffff;">
+										Ngiring bingah semoga Alloh jadikan keluarga yg sakinah mawadah warohmah
+									</p>
+								</div>
+							</div>
+
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+							aria-disabled="false"></div>
+						<div class="swiper-button-prev swiper-button-disabled" tabindex="0" role="button"
+							aria-label="Previous slide" aria-disabled="true"></div>
+						<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+					</div>
+
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="space1" style="display:block; clear:both;"></div>
+
+	<div class="clear"></div>
+	<!--Footer Section start-->
+	<footer id="footer">
+
+		<div class="main-footer" style="background-color:#ffffff;">
+			<div class="container" style="width:80%;color:#2f4d40;">
+				<div class="row" style="font-family: Montserrat, sans-serif;font-size:12px;">
+					<img src="assets/logo-grinvi-transparent.png"
+						style="background-color:#2f4d40;width:80px;display:block;margin-bottom:10px;margin-top:10px;">
+					© 2021 invitation by grinvitation.com
+					<br><br>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--Footer Section End-->
+
+	<script src="assets/main_story.js"></script>
+	<script src="assets/fastclick.js"></script>
+	<script src="assets/scroll.js"></script>
+	<script src="assets/fixed-responsive-nav.js"></script>
+	<div class="mask"></div>
+
+	<script src="assets/simplyCountdown.js"></script>
+	<!-- Main -->
+	<script src="assets/main.js"></script>
+
+	<script>
+		var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
+
+		// default example
+		simplyCountdown('.simply-countdown-one', {
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate()
+		});
+
+		//jQuery example
+		$('#simply-countdown-losange').simplyCountdown({
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate(),
+			enableUtc: false
+		});
+	</script>
+
+	<script>
+		Hitung();
+		function Hitung() {
+
+			tahun = 2021;
+			bulan = 08;
+			hari = 25;
+			jam = 11;
+			menit = 00;
+			detik = 00;
+
+
+
+			setTimeout(function () {
+				tglTarget = new Date(tahun, (bulan - 1), hari, jam, menit, detik, 00);
+				tglSkrg = new Date();
+				tglSkrg = new Date(tglSkrg.getFullYear(), tglSkrg.getMonth(), tglSkrg.getDate(), tglSkrg.getHours(), tglSkrg.getMinutes(), tglSkrg.getSeconds(), 00, 00);
+				var sisaHari = parseInt((tglTarget - tglSkrg) / 86400000);
+				var sisaJam = parseInt((tglTarget - tglSkrg) / 3600000);
+				var sisaMenit = parseInt((tglTarget - tglSkrg) / 60000);
+				var sisaDetik = parseInt((tglTarget - tglSkrg) / 1000);
+				detik = sisaMenit * 60;
+				detik = sisaDetik - detik;
+				menit = sisaJam * 60;
+				menit = sisaMenit - menit;
+				jam = sisaHari * 24;
+				jam = (sisaJam - jam) < 0 ? 0 : sisaJam - jam;
+				hari = sisaHari;
+				mulaiHitung(hari, jam, menit, detik, tahun);
+			}, 1000);
+		}
+
+		function mulaiHitung(hari, jam, menit, detik, tahun) {
+			document.getElementById("hitungmundur1").innerHTML = "" + hari + "<span>HARI</span>";
+			document.getElementById("hitungmundur2").innerHTML = "" + jam + "<span>JAM</span>";
+			document.getElementById("hitungmundur3").innerHTML = "" + menit + "<span>MENIT</span>";
+			document.getElementById("hitungmundur4").innerHTML = "" + detik + "<span>DETIK</span>";
+			Hitung();
+		}
+
+	</script>
+
+	<!-- Swiper JS -->
+	<script src="assets/swiper.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+
+	<script>
+		document.getElementById('mute1').style.display = 'none';
+
+		var x = document.getElementById('myAudio');
+		function playAudio() {
+			x.play();
+			document.getElementById('un-mute1').style.display = 'none';
+			document.getElementById('mute1').style.display = 'inline-block';
+		}
+		function pauseAudio() {
+			x.pause();
+			document.getElementById('mute1').style.display = 'none';
+			document.getElementById('un-mute1').style.display = 'inline-block';
+		}
+
+	</script>
+
+
+
+	<script src="assets/css3-animate-it.js"></script>
+
+	<script>
+		function autoRefresh_div() {
+			$('#cek').load('test.php?reva=');
+		}
+		setInterval('autoRefresh_div()', 1000);
+	</script>
+
+
+
+
+	<div class="modal fade bd-example-modal-lg" id="exampleModal-akad" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top:5%;">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<p id="font_digital_2" style="font-size:24px;text-align:center;font-weight:bold;margin-top:10px;">
+						Denah Lokasi</p>
+					<p
+						style="font-family: Montserrat, sans-serif; font-size:12px; letter-spacing:1px;text-align:center;">
+						Pilih salah satu media di bawah untuk petunjuk arah ke lokasi acara
+						<a href="http://grinvitation.com/wungatetenwedding/" target="blank"
+							style="display:block;margin-top:10px;">
+							<button
+								style="font-size:12px; letter-spacing:4px; font-family: Montserrat, sans-serif;background-color:#2f4d40; width:100%; color:#ffffff; padding-top:10px;padding-bottom:10px;border-radius:25px;border:0px;">GOOGLE
+								MAPS</button>
+						</a>
+
+
+					</p>
+
+				</div>
+				<div class="col-md-12 ml-auto">
+
+
+
+
+					<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+					<style>
+						#map-canvas {
+							height: 350px;
+						}
+					</style>
+					<script src="assets/js" type="text/javascript"></script>
+
+
+
+					<div id="map-canvas" style="border:1px solid #2f4d40;border-radius:5px;">
+						<iframe style="border-radius:5px;" src="assets/place.asc" allowfullscreen="" width="100%"
+							height="100%" frameborder="0">
+						</iframe>
+					</div>
+
+
+
+				</div>
+				<div style="clear:both;display:block;">
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade bd-example-modal-lg" id="exampleModal-resepsi" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top:5%;">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<p id="font_digital_2" style="font-size:24px;text-align:center;font-weight:bold;margin-top:10px;">
+						Denah Lokasi</p>
+					<p
+						style="font-family: Montserrat, sans-serif; font-size:12px; letter-spacing:1px;text-align:center;">
+						Pilih salah satu media di bawah untuk petunjuk arah ke lokasi acara
+						<a href="https://www.google.com/maps/dir//-7.0117503,107.745947/@-7.0120919,107.7447346,17.2z/data=!4m2!4m1!3e0"
+							target="blank" style="display:block;margin-top:10px;">
+							<button
+								style="font-size:12px; letter-spacing:4px; font-family: Montserrat, sans-serif;background-color:#2f4d40; width:100%; color:#ffffff; padding-top:10px;padding-bottom:10px;border-radius:25px;border:0px;">GOOGLE
+								MAPS</button>
+						</a>
+
+						<a href="https://ul.waze.com/ul?place=ChIJ6S9iq2zBaC4R1-IqdYt2ipA&amp;ll=-7.01194690%2C107.74592160&amp;navigate=yes&amp;utm_campaign=default&amp;utm_source=waze_website&amp;utm_medium=lm_share_location"
+							target="blank" style="display:block;margin-top:10px;margin-bottom:20px;">
+							<button
+								style="font-size:12px; letter-spacing:4px; font-family: Montserrat, sans-serif;background-color:#2f4d40; width:100%; color:#ffffff; padding-top:10px;padding-bottom:10px;border-radius:25px;border:0px;">WAZE</button>
+						</a>
+
+					</p>
+
+				</div>
+				<div class="col-md-12 ml-auto">
+
+
+
+
+					<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+					<style>
+						#map-canvas {
+							height: 350px;
+						}
+					</style>
+					<script src="assets/js" type="text/javascript"></script>
+
+
+
+					<div id="map-canvas" style="border:1px solid #2f4d40;border-radius:5px;">
+						<iframe style="border-radius:5px;" src="assets/place_002.html" allowfullscreen="" width="100%"
+							height="100%" frameborder="0">
+						</iframe>
+					</div>
+
+
+
+				</div>
+				<div style="clear:both;display:block;">
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="modal fade bd-example-modal-lg" id="exampleModal-umum" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top:5%;">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<p id="font_digital_2" style="font-size:24px;text-align:center;font-weight:bold;margin-top:10px;">
+						Denah Lokasi</p>
+					<p
+						style="font-family: Montserrat, sans-serif; font-size:12px; letter-spacing:1px;text-align:center;">
+						Pilih salah satu media di bawah untuk petunjuk arah ke lokasi acara
+						<a href="https://www.google.com/maps/dir//-7.0117503,107.745947/@-7.0120919,107.7447346,17.2z/data=!4m2!4m1!3e0"
+							target="blank" style="display:block;margin-top:10px;">
+							<button
+								style="font-size:12px; letter-spacing:4px; font-family: Montserrat, sans-serif;background-color:#2f4d40; width:100%; color:#ffffff; padding-top:10px;padding-bottom:10px;border-radius:25px;border:0px;">GOOGLE
+								MAPS</button>
+						</a>
+						<a href="https://ul.waze.com/ul?place=ChIJ6S9iq2zBaC4R1-IqdYt2ipA&amp;ll=-7.01194690%2C107.74592160&amp;navigate=yes&amp;utm_campaign=default&amp;utm_source=waze_website&amp;utm_medium=lm_share_location"
+							target="blank" style="display:block;margin-top:10px;margin-bottom:20px;">
+							<button
+								style="font-size:12px; letter-spacing:4px; font-family: Montserrat, sans-serif;background-color:#2f4d40; width:100%; color:#ffffff; padding-top:10px;padding-bottom:10px;border-radius:25px;border:0px;">WAZE</button>
+						</a>
+					</p>
+
+				</div>
+				<div class="col-md-12 ml-auto">
+
+
+
+
+					<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+					<style>
+						#map-canvas {
+							height: 350px;
+						}
+					</style>
+					<script src="assets/js" type="text/javascript"></script>
+
+
+
+					<div id="map-canvas" style="border:1px solid #2f4d40;border-radius:5px;">
+						<iframe style="border-radius:5px;" src="assets/place_002.html" allowfullscreen="" width="100%"
+							height="100%" frameborder="0">
+						</iframe>
+					</div>
+
+
+
+				</div>
+				<div style="clear:both;display:block;">
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="popupsi-" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel"
+						style="font-size:20px;letter-spacing:1px;font-family: Montserrat, sans-serif;text-align:center;">
+						QRCODE RESERVATION</h5>
+				</div>
+				<div class="modal-body" style="text-align:center;">
+					<div id="cek">
+						<style>
+							/**
+         * Extracted from: SweetAlert
+         * Modified by: Istiak Tridip
+         */
+							.success-checkmark {
+								width: 80px;
+								height: 115px;
+								margin: 0 auto;
+							}
+
+							.success-checkmark .check-icon {
+								width: 80px;
+								height: 80px;
+								position: relative;
+								border-radius: 50%;
+								box-sizing: content-box;
+								border: 4px solid #4CAF50;
+							}
+
+							.success-checkmark .check-icon::before {
+								top: 3px;
+								left: -2px;
+								width: 30px;
+								transform-origin: 100% 50%;
+								border-radius: 100px 0 0 100px;
+							}
+
+							.success-checkmark .check-icon::after {
+								top: 0;
+								left: 30px;
+								width: 60px;
+								transform-origin: 0 50%;
+								border-radius: 0 100px 100px 0;
+								animation: rotate-circle 4.25s ease-in;
+							}
+
+							.success-checkmark .check-icon::before,
+							.success-checkmark .check-icon::after {
+								content: '';
+								height: 100px;
+								position: absolute;
+								background-color: transparent;
+								transform: rotate(-45deg);
+							}
+
+							.success-checkmark .check-icon .icon-line {
+								height: 5px;
+								background-color: #4CAF50;
+								display: block;
+								border-radius: 2px;
+								position: absolute;
+								z-index: 10;
+							}
+
+							.success-checkmark .check-icon .icon-line.line-tip {
+								top: 46px;
+								left: 14px;
+								width: 25px;
+								transform: rotate(45deg);
+								animation: icon-line-tip 0.75s;
+							}
+
+							.success-checkmark .check-icon .icon-line.line-long {
+								top: 38px;
+								right: 8px;
+								width: 47px;
+								transform: rotate(-45deg);
+								animation: icon-line-long 0.75s;
+							}
+
+							.success-checkmark .check-icon .icon-circle {
+								top: -4px;
+								left: -4px;
+								z-index: 10;
+								width: 80px;
+								height: 80px;
+								border-radius: 50%;
+								position: absolute;
+								box-sizing: content-box;
+								border: 4px solid rgba(76, 175, 80, 0.5);
+							}
+
+							.success-checkmark .check-icon .icon-fix {
+								top: 8px;
+								width: 5px;
+								left: 26px;
+								z-index: 1;
+								height: 85px;
+								position: absolute;
+								transform: rotate(-45deg);
+								background-color: transparent;
+							}
+
+							@keyframes rotate-circle {
+								0% {
+									transform: rotate(-45deg);
+								}
+
+								5% {
+									transform: rotate(-45deg);
+								}
+
+								12% {
+									transform: rotate(-405deg);
+								}
+
+								100% {
+									transform: rotate(-405deg);
+								}
+							}
+
+							@keyframes icon-line-tip {
+								0% {
+									width: 0;
+									left: 1px;
+									top: 19px;
+								}
+
+								54% {
+									width: 0;
+									left: 1px;
+									top: 19px;
+								}
+
+								70% {
+									width: 50px;
+									left: -8px;
+									top: 37px;
+								}
+
+								84% {
+									width: 17px;
+									left: 21px;
+									top: 48px;
+								}
+
+								100% {
+									width: 25px;
+									left: 14px;
+									top: 45px;
+								}
+							}
+
+							@keyframes icon-line-long {
+								0% {
+									width: 0;
+									right: 46px;
+									top: 54px;
+								}
+
+								65% {
+									width: 0;
+									right: 46px;
+									top: 54px;
+								}
+
+								84% {
+									width: 55px;
+									right: 0px;
+									top: 35px;
+								}
+
+								100% {
+									width: 47px;
+									right: 8px;
+									top: 38px;
+								}
+							}
+						</style>
+
+						<style>
+							@media(max-width : 720px) {
+								.imgqr {
+									width: 70%;
+								}
+							}
+
+							@media(min-width : 720px) {
+								.imgqr {
+									width: 250px;
+								}
+							}
+						</style>
+
+
+
+						<p
+							style="text-align:center;font-family: Montserrat, sans-serif; font-weight:bold;width:98%;margin-left:1%;">
+
+							Dimohon untuk menunjukan QRCODE Reservasi saat memasuki area acara
+							<img src="assets/a.html" class="imgqr"
+								style="border-radius:10px;display:block;margin-top:5px;">
+						</p>
+					</div>
+				</div>
+				<div class="modal-footer">
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
